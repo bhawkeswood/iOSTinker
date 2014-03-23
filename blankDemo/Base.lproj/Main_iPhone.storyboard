@@ -35,7 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="handleButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OOV-Nq-T1a"/>
+                                    <action selector="handleButtonClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0LT-1u-DJR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,7 +44,7 @@
                     <connections>
                         <outlet property="clickyButton" destination="Od0-fQ-lbP" id="ake-c2-L6y"/>
                         <outlet property="customTextField" destination="9A8-69-yDA" id="kWj-f2-Mph"/>
-                        <outlet property="handleButtonClick" destination="Od0-fQ-lbP" id="zDQ-n5-UbR"/>
+                        <outlet property="handleButtonClick" destination="kh9-bI-dsS" id="TuH-X3-unG"/>
                         <outlet property="helloLabel" destination="9fG-JE-0Vr" id="43K-4h-ik8"/>
                     </connections>
                 </viewController>

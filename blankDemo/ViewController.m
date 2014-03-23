@@ -19,9 +19,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.helloLabel.text = @"Something...";
+    self.helloLabel.text = @"default text";
     
-    [self.clickyButton setTitle:@"Click Me" forState:UIControlStateNormal];
+    [self.clickyButton setTitle:@"Clicky" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,7 +29,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (IBAction)handleButtonClick:(id)sender {
     self.helloLabel.text = self.customTextField.text;
 }
