@@ -18,6 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Create the laebl object and set its frame
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+    
+    // Set the text property of the label
+    label.text = @"Hello Again!";
+    
+    // Add the label obejct to the view
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning
