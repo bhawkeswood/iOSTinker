@@ -19,20 +19,23 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    // Create the laebl object and set its frame
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(115, 150, 200, 50)];
+    self.helloLabel.text = @"Something...";
     
-    // Set the text property of the label
-    label.text = @"Hello Again!";
-    
-    // Add the label obejct to the view
-    [self.view addSubview:label];
+    [self.clickyButton setTitle:@"Click Me" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)handleButtonClick:(id)sender {
+    self.helloLabel.text = self.customTextField.text;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.customTextField resignFirstResponder];
 }
 
 @end
