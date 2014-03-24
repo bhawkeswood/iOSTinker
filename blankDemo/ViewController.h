@@ -10,8 +10,8 @@
 
 @interface ViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *helloLabel;
-@property (strong, nonatomic) IBOutlet UITextField *customTextField;
-@property (strong, nonatomic) IBOutlet UIButton *clickyButton;
+@property (weak, nonatomic) IBOutlet UILabel *helloLabel;
+@property (weak, nonatomic) IBOutlet UITextField *customTextField;
+@property (weak, nonatomic) IBOutlet UIButton *clickyButton;
 
 @end
